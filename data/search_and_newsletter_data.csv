@@ -1,0 +1,7 @@
+type,input_value,expected,description
+search,pemilu,FOUND,Pencarian kata kunci populer (kanal Pemilu tersedia di Kompas.com)
+search,kesehatan,FOUND,Pencarian kata kunci umum
+search,xyzqwtidakada123,NOT_FOUND,Pencarian kata kunci tidak masuk akal - memicu elemen emptyAlart
+newsletter,budi@gmail.com,PASS,Contoh format email valid - email aktual dibuat unik per run (qa.test.<timestamp>@gmail.com) agar tidak bentrok dengan akun yang sudah terdaftar di proses Register
+newsletter,budi@,FAIL,Email tanpa domain - memicu pesan Incorrect email format.
+newsletter,budi.gmail.com,FAIL,Email tanpa simbol @ - memicu pesan Incorrect email format.

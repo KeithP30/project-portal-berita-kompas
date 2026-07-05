@@ -1,0 +1,2 @@
+[33mWARNING [0m SearchResultPage:base_page.py:67 Klik normal terhalang elemen lain di ('css selector', "a[href*='/read/']"), fallback ke klik JavaScript
+[33mWARNING [0m ArticlePage:base_page.py:67 Klik normal terhalang elemen lain di ('css selector', "a[href='https://www.kompas.com']"), fallback ke klik JavaScript

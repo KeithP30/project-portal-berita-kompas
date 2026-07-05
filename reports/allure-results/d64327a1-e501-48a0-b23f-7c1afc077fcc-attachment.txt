@@ -1,0 +1,1 @@
+[33mWARNING [0m HomePage:base_page.py:61 Klik normal terhalang elemen lain di ('link text', 'Money'), fallback ke klik JavaScript

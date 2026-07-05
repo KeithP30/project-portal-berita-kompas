@@ -1,0 +1,1 @@
+[33mWARNING [0m SearchResultPage:base_page.py:103 Klik normal terhalang elemen lain di ('css selector', "a[href*='/read/']"), fallback ke klik JavaScript (percobaan 1/3)

@@ -1,0 +1,2 @@
+[33mWARNING [0m SearchResultPage:base_page.py:89 Klik normal terhalang elemen lain di ('css selector', "a[href*='/read/']"), fallback ke klik JavaScript
+[33mWARNING [0m ArticlePage:base_page.py:82 Elemen basi di ('css selector', "a[href='https://www.kompas.com']"), mencari ulang dan klik lagi

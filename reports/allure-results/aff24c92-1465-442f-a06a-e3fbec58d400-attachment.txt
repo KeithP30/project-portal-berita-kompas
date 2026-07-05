@@ -1,0 +1,1 @@
+[33mWARNING [0m HomePage:base_page.py:89 Klik normal terhalang elemen lain di ('link text', 'Daftarkan Email'), fallback ke klik JavaScript
