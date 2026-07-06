@@ -24,6 +24,12 @@ class TestKategori:
         home.navigate()
         home.open_category("Money")
         assert home.get_article_count() >= 1
+        @allure.title("TC-PB-013: Verifikasi kategori Tekno dapat diklik dan memuat artikel")
+def test_kategori_tekno_dapat_diklik(self, driver):
+    home = HomePage(driver)
+    home.navigate()
+    home.open_category("Tekno")
+    assert home.get_article_count() >= 1, "Halaman kategori Tekno harus memuat minimal 1 artikel"
 
 
 class TestNavigasi:
