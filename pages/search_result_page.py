@@ -14,14 +14,17 @@ class SearchResultPage(BasePage):
         return self.get_text(self.RESULT_COUNT_TEXT)
 
     def get_result_count(self):
-        try:
-            text = self.get_result_count_text()
-            match = re.search("Ditemukan\s+(\d+)\s+hasil", text)
-            if match:
-                return int(match.group(1))
-        except Exception:
-            pass
-        return len(self.driver.find_elements(*self.RESULT_ITEMS))
+    try:
+        text = self.get_result_count_text()
+        match = re.search(r"Ditemukan\s+(\d+)\s+hasil", text)
+        if match:
+            return int(match.group(1))
+    except Exception:
+        pass
+    try:
+        return len(self.find_all(self.RESULT_ITEMS, timeout=15))
+    except Exception:
+        return 0
 
     def has_no_result_message(self):
         return self.is_visible(self.NO_RESULT_BOX)
