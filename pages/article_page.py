@@ -4,7 +4,7 @@ from pages.base_page import BasePage
 
 class ArticlePage(BasePage):
     """Page Object untuk halaman detail artikel Kompas.com."""
-    TITLE = (By.CSS_SELECTOR, "h1.read_title")
+    TITLE = (By.CSS_SELECTOR, "h1.read_title, h1")
     AUTHOR = (By.CSS_SELECTOR, ".credit-title-name")
     DATE = (By.CSS_SELECTOR, ".read_date")
 
